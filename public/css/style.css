@@ -1,0 +1,113 @@
+html,
+body {
+    background-color: #1E0231;
+    color: #FFFFFF;
+    height: 100%;
+    text-align: center;
+}
+
+a {
+    color: #EF233C;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a.focus {
+    color: #ef233bd4;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #EF233C;
+    border-color: #ef233bd4;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus {
+    color: #FFFFFF;
+    background-color: #ef233bd4;
+    border-color: #ef233bd4;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.space {
+    margin-top: 2vh;
+}
+
+.logo {
+    height: 300px;
+    width: 300px;
+}
+
+.landing {
+    flex: 1;
+    margin-top: -2rem;
+}
+
+.landing-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: calc(2rem + 3.5vw);
+    line-height: 0.9;
+}
+
+.landing-subtitle {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.landing-action {
+    border-radius: 2rem;
+    margin: 0 auto;
+    max-width: 10rem;
+    min-height: 2.5rem;
+    min-width: 160px;
+    text-transform: uppercase;
+}
+
+.social {
+    justify-content: center;
+}
+
+.social-icon {
+    color: #FFFFFF;
+    height: 2.5rem;
+    margin: 0.25rem;
+}
+
+.google-survey {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-height: 425px) {
+
+    .logo {
+        margin-top: -3.5rem;
+    }
+
+    .landing {
+        margin-top: -5rem;
+    }
+
+    .landing-title {
+        font-size: calc(2rem + 3vw);
+    }
+
+    .landing-subtitle {
+        font-size: calc(0.25rem + 2vw);
+    }
+}
