@@ -1,0 +1,11 @@
+{{ define "social" }}
+<ul class="nav social">
+{{ range .Site.Params.Social }}
+    <li>
+        <a href="{{ .href }}" target="_blank">
+            <img class="social-icon" alt="{{ .alt }}" src="{{ .src }}"/>
+        </a>
+    </li>
+{{ end }}
+</ul>
+{{ end }}

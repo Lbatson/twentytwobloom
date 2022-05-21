@@ -1,0 +1,38 @@
+{{ define "main" }}
+{{ $logo := .Site.Params.Logo }}
+{{ $landing := .Site.Params.Landing }}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 col-xl-4 offset-xl-0">
+      <a href="/">
+        <img class="logo" src="{{ $logo.src }}" alt="{{ $logo.alt }}">
+      </a>
+    </div>
+  </div>
+  <div class="row landing">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <h1 class="d-none d-lg-block landing-title">{{ $landing.Title | safeHTML }}</h1>
+          <h1 class="d-block d-lg-none landing-title">{{ $landing.MobileTitle | safeHTML }}</h1>
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col">
+          <h4 class="landing-subtitle">{{ $landing.Subtitle | safeHTML }}</h4>
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col">
+          <a href="{{ $landing.Action.Href }}" class="btn btn-primary landing-action">{{ $landing.Action.Text }}</a>
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col">
+          {{- block "social" . }}{{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,47 @@
+{
+    "baseURL": "https://twentytwobloom.com",
+    "languageCode": "en-us",
+    "title": "Twenty-Two Bloom",
+    "theme": "Landing",
+    "params": {
+        "logo": {
+            "alt": "Twenty-Two Bloom",
+            "src": "/image/twentytwobloom.svg"
+        },
+        "landing": {
+            "title": "Launching<br>soon!",
+            "mobileTitle": "Launching soon!",
+            "subtitle": "We are currently making some<br/>improvements to our website!",
+            "action": {
+                "href": "/subscribe",
+                "text": "Notify Me"
+            }
+        },
+        "notFound": {
+            "title": "Oops!",
+            "subtitle": "Looks like the page you're looking for isn't here.<br/><a href=\"/\">Click here to go to the home page</a>"
+        },
+        "social": [
+            {
+                "alt": "Twenty-Two Bloom on Instagram",
+                "src": "/image/instagram.png",
+                "href": "https://instagram.com/twentytwobloom"
+            },
+            {
+                "alt": "Twenty-Two Bloom on Facebook",
+                "src": "/image/facebook.png",
+                "href": "https://facebook.com/twentytwobloom"
+            },
+            {
+                "alt": "Twenty-Two Bloom on Pintrest",
+                "src": "/image/pinterest.png",
+                "href": "https://pinterest.com/twentytwobloom"
+            },
+            {
+                "alt": "Twenty-Two Bloom on Twitter",
+                "src": "/image/twitter.png",
+                "href": "https://twitter.com/twentytwobloom"
+            }
+        ]
+    }
+}

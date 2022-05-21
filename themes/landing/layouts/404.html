@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ $logo := .Site.Params.Logo }}
+{{ $page := .Site.Params.NotFound }}
+<div class="container">
+  <div class="row">
+    <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-0 col-xl-4 offset-xl-0">
+      <a href="/">
+        <img class="logo" src="{{ $logo.src }}" alt="{{ $logo.alt }}">
+      </a>
+    </div>
+  </div>
+  <div class="row landing">
+    <div class="col">
+      <div class="row">
+        <div class="col">
+          <h1 class="landing-title">{{ $page.Title | safeHTML }}</h1>
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col">
+          <h4 class="landing-subtitle">{{ $page.Subtitle | safeHTML }}</h4>
+        </div>
+      </div>
+      <div class="row space">
+        <div class="col">
+          {{- block "social" . }}{{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
