@@ -11,6 +11,16 @@
 {{ else }}
     {{ $title = print .Site.Title " | " .Title }}
 {{ end }}
+<title>{{ $title }}</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1W2WLWLW8R"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1W2WLWLW8R');
+</script>
 <!-- MailerLite Universal -->
 <script>
     (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
@@ -20,4 +30,3 @@
     ml('account', '53100');
 </script>
 <!-- End MailerLite Universal -->
-<title>{{ $title }}</title>
