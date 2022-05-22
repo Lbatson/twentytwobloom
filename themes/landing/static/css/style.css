@@ -3,6 +3,7 @@ body {
     background-color: #1E0231;
     color: #FFFFFF;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
@@ -21,6 +22,9 @@ a.focus {
     color: #FFFFFF;
     background-color: #EF233C;
     border-color: #ef233bd4;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .btn-primary:hover,
@@ -84,6 +88,7 @@ a.focus {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 @media (max-width: 991.98px) {
